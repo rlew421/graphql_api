@@ -5,9 +5,9 @@ module Types
     field :email, String, null: true
     field :books, [Types::BookType], null: true
     field :books_count, Integer, null: true
-  end
-
-  def books_count
-    object.books.size
+    
+    def books_count
+      object.books.size
+    end
   end
 end
